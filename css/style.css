@@ -166,6 +166,8 @@ details[open] .less { display: inline; }
   content: "GitHub \2192"; position: absolute; right: 1.2rem; bottom: 1rem; font-size: .85rem; color: var(--muted);
   opacity: 0; transform: translateX(-6px); transition: opacity .25s, transform .25s;
 }
+.site { position: absolute; left: 1.2rem; bottom: 1rem; z-index: 2; font-size: .85rem; font-weight: 700; color: var(--a); text-decoration: none; }
+.site:hover { text-decoration: underline; }
 .card:hover::after, .card:focus-within::after { opacity: 1; transform: none; }
 .card { padding-bottom: 2.6rem; }
 
