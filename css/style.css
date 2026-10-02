@@ -218,15 +218,6 @@ footer p { margin: 0; letter-spacing: normal; }
 .wiggle { animation: wiggle .9s both; }
 @keyframes wiggle { 15% { transform: rotate(-4deg) scale(1.05); } 30% { transform: rotate(4deg) scale(1.05); } 45% { transform: rotate(-3deg) scale(1.04); } 60% { transform: rotate(3deg); } 75% { transform: rotate(-1deg); } }
 
-.is-new::before { opacity: 1; }
-.is-new .card-head::after {
-  content: "NEW"; position: absolute; top: -.6rem; right: .9rem; z-index: 3;
-  font-size: .68rem; font-weight: 700; letter-spacing: .12em; color: #fff; padding: .2rem .6rem; border-radius: 999px;
-  background: linear-gradient(100deg, #ff5d8f, #ffb703); box-shadow: 0 4px 10px -4px #ff5d8f;
-  animation: jiggle 2.4s ease-in-out infinite;
-}
-@keyframes jiggle { 0%, 70%, 100% { transform: rotate(0); } 78% { transform: rotate(-8deg) scale(1.1); } 86% { transform: rotate(7deg) scale(1.1); } 94% { transform: rotate(-3deg); } }
-
 .card:hover .icon, .card:focus-within .icon { animation: boing .6s; }
 @keyframes boing { 40% { transform: rotate(-10deg) scale(1.25); } 70% { transform: rotate(6deg) scale(1.08); } }
 .quip { margin-top: .5rem !important; cursor: pointer; font-size: .82rem; opacity: .85; }
