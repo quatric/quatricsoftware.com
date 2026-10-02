@@ -190,4 +190,4 @@ footer p { margin: 0; letter-spacing: .3em; text-indent: .3em; }
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .swash path { stroke-dashoffset: 0; }
 }
-.icon.light { background: #f4f8fc; }
+.icon.bare { background: none; }
