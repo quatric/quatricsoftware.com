@@ -89,7 +89,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 0 clamp(1rem, 4vw, 2.5rem); }
 .hero { text-align: center; padding: clamp(4rem, 14vw, 9rem) 0 clamp(3rem, 8vw, 5rem); }
 .iam {
   margin: 0; font-size: clamp(1rem, 3vw, 1.4rem);
-  letter-spacing: .5em; text-indent: .5em; text-transform: uppercase; color: var(--muted);
+  letter-spacing: .3em; text-indent: .3em; word-spacing: -.1em; text-transform: uppercase; color: var(--muted);
   animation: rise .9s both;
 }
 h1 {
@@ -103,7 +103,7 @@ h1 {
   -webkit-background-clip: text; background-clip: text; color: transparent;
   animation: rise 1s .15s both, sheen 9s linear infinite;
 }
-.period { display: inline-block; animation: bounce 2.6s 1.4s ease-in-out infinite; }
+.period { display: inline-block; color: var(--b); -webkit-text-fill-color: var(--b); animation: bounce 2.6s 1.4s ease-in-out infinite; }
 .swash { display: block; width: min(60%, 420px); height: 22px; margin: .4rem auto 0; overflow: visible; }
 .swash path { fill: none; stroke: var(--a); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 420; stroke-dashoffset: 420; animation: draw 1.4s .8s ease-out forwards; }
 .lede { margin: 1.6rem auto 0; max-width: 32ch; font-size: clamp(1.05rem, 2.6vw, 1.35rem); color: var(--muted); animation: rise 1s .5s both; }
