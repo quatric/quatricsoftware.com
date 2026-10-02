@@ -36,23 +36,8 @@
   const lede = $('#lede');
   lede.addEventListener('click', e => {
     li = (li + 1) % lines.length;
-    lede.classList.remove('swap'); void lede.offsetWidth;
     lede.textContent = lines[li];
-    lede.classList.add('swap');
     confetti(e.clientX, e.clientY, 10);
-  });
-
-  /* surprise me: jump to a random card and wiggle it */
-  $('#surprise').addEventListener('click', () => {
-    const cards = $$('.card');
-    const c = cards[Math.floor(Math.random() * cards.length)];
-    c.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
-    c.classList.remove('wiggle'); void c.offsetWidth;
-    setTimeout(() => {
-      c.classList.add('wiggle');
-      const r = c.getBoundingClientRect();
-      confetti(r.left + r.width / 2, r.top + 20, 22);
-    }, reduce ? 0 : 500);
   });
 
   /* scroll reveal with stagger */
