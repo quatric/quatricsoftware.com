@@ -167,7 +167,10 @@ details[open] .less { display: inline; }
   opacity: 0; transform: translateX(-6px); transition: opacity .25s, transform .25s;
 }
 .site { position: absolute; left: 1.2rem; bottom: 1rem; z-index: 2; font-size: .85rem; font-weight: 700; color: var(--a); text-decoration: none; }
-.site:hover { text-decoration: underline; }
+.site:hover, .gh:hover { text-decoration: underline; }
+.gh { position: absolute; right: 1.2rem; bottom: 1rem; z-index: 2; font-size: .85rem; color: var(--muted); text-decoration: none; opacity: 0; transform: translateX(-6px); transition: opacity .25s, transform .25s; }
+.card:hover .gh, .card:focus-within .gh { opacity: 1; transform: none; }
+.card.web::after { content: none; }
 .card:hover::after, .card:focus-within::after { opacity: 1; transform: none; }
 .card { padding-bottom: 2.6rem; }
 
