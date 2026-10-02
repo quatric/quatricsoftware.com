@@ -48,9 +48,10 @@
 <main id="top">
   <section class="hero">
     <p class="iam">I am</p>
-    <h1><span class="word">quatric<span class="period">.</span></span></h1>
+    <h1><span class="word">quatric<span class="period" id="period" role="presentation">.</span></span></h1>
     <svg class="swash" viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 16 C 60 4, 120 22, 200 12 S 340 6, 396 14"/></svg>
-    <p class="lede">Innovating the homebrew scene.</p>
+    <p class="lede"><button type="button" class="lede-btn" id="lede" title="Click for another!">Innovating the homebrew scene.</button></p>
+    <button type="button" class="surprise" id="surprise">&#127922; Surprise me</button>
   </section>
 
   <section id="projects" class="block">
@@ -138,6 +139,14 @@
     <h2>Patches</h2>
     <p class="section-note">Controller and storage fixes for Wii games, shipped as Gecko codes, Riivolution XMLs, and patchers.</p>
     <ul class="grid">
+<li class="card is-new">
+<div class="card-head"><img class="icon" src="/img/taiko-patcher.png" alt="" width="64" height="64" loading="lazy"><div><h3><a href="https://github.com/quatric/Taiko-Patcher" rel="noopener">Taiko no Tatsujin Wii</a></h3><span class="repo">Taiko-Patcher</span></div></div>
+<p>GameCube controller, DK Bongo and Classic Controller support for all five games.</p>
+</li>
+<li class="card is-new">
+<div class="card-head"><img class="icon" src="/img/epic-yarn-patch.png" alt="" width="64" height="64" loading="lazy"><div><h3><a href="https://github.com/quatric/Epic-Yarn-Patch" rel="noopener">Kirby&#x27;s Epic Yarn</a></h3><span class="repo">Epic-Yarn-Patch</span></div></div>
+<p>GameCube controller support.</p>
+</li>
 <li class="card">
 <div class="card-head"><img class="icon" src="/img/barrel-blast-patch.png" alt="" width="64" height="64" loading="lazy"><div><h3><a href="https://github.com/quatric/Barrel-Blast-Patch" rel="noopener">Donkey Kong Barrel Blast</a></h3><span class="repo">Barrel-Blast-Patch</span></div></div>
 <p>Classic Controller, GameCube controller and DK Bongos support.</p>
@@ -185,6 +194,7 @@
   </section>
 </main>
 
-<footer><p>&copy; 2026 quatric</p></footer>
+<footer><p>&copy; 2026 quatric</p><p class="quip" id="quip">Made with questionable amounts of caffeine.</p></footer>
+<script src="/js/fun.js" defer></script>
 </body>
 </html>
