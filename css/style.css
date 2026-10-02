@@ -171,7 +171,7 @@ details[open] .less { display: inline; }
 .card:hover::after, .card:focus-within::after { opacity: 1; transform: none; }
 .card { padding-bottom: 2.6rem; }
 
-.more-work { margin: 2.4rem 0 0; text-align: center; font-size: clamp(1.1rem, 3vw, 1.5rem); font-weight: 700; color: var(--muted); }
+.more-work { margin: 4rem 0 0; text-align: center; font-size: clamp(1.1rem, 3vw, 1.5rem); font-weight: 700; color: var(--muted); }
 
 /* about + contact */
 .about p { max-width: 62ch; font-size: clamp(1.05rem, 2.2vw, 1.2rem); margin: 0; }
