@@ -232,3 +232,7 @@ footer p { margin: 0; letter-spacing: normal; }
 .party { filter: hue-rotate(0deg); }
 .party body { animation: hue 6s linear infinite; }
 @keyframes hue { to { filter: hue-rotate(360deg); } }
+
+.progress { margin: 0 0 1.6rem; }
+.btn { display: inline-block; padding: .65rem 1.3rem; border-radius: 999px; background: linear-gradient(135deg, var(--a), var(--b)); color: #fff; font-weight: 700; text-decoration: none; box-shadow: var(--shadow); transition: transform .15s; }
+.btn:hover, .btn:focus-visible { transform: translateY(-2px) scale(1.04); }
