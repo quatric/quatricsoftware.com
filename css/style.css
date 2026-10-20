@@ -181,8 +181,9 @@ details[open] .less { display: inline; }
 
 /* about + contact */
 .about p { max-width: 62ch; font-size: clamp(1.05rem, 2.2vw, 1.2rem); margin: 0; }
-.contact { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .9rem; }
-.contact li { flex: 1 1 auto; }
+.contact { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: .9rem; }
+.contact li { min-width: 0; }
+.contact a { height: 100%; box-sizing: border-box; }
 .contact a {
   display: block; padding: 1rem 1.2rem; text-decoration: none; overflow-wrap: break-word;
   background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
