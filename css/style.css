@@ -237,3 +237,7 @@ footer p { margin: 0; letter-spacing: normal; }
 .progress { margin: 0 0 1.6rem; text-align: center; }
 .btn { display: inline-block; padding: .65rem 1.3rem; border-radius: 999px; background: linear-gradient(135deg, var(--a), var(--b)); color: #fff; font-weight: 700; text-decoration: none; box-shadow: var(--shadow); transition: transform .15s; }
 .btn:hover, .btn:focus-visible { transform: translateY(-2px) scale(1.04); }
+
+.subhead { margin: 4rem 0 1.4rem; font-size: clamp(1.4rem, 3.5vw, 1.9rem); letter-spacing: -.01em; line-height: 1.15; }
+.more-work + .subhead { margin-top: 3rem; }
+.more-work { margin-top: 2.5rem; }
