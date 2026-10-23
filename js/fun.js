@@ -76,7 +76,7 @@
     'Ask me about the Wii. Please. Anyone.',
     'Try the Konami code. You know the one.',
     'This footer is clickable. Probably a mistake.',
-    'Powered by spite and Gecko codes.'
+    'Powered by curiosity and Gecko codes.'
   ];
   let qi = 0;
   $('#quip').addEventListener('click', () => { qi = (qi + 1) % quips.length; $('#quip').textContent = quips[qi]; });
