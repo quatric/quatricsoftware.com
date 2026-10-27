@@ -120,8 +120,11 @@ h1 {
   fill: none; stroke: #fff; stroke-width: 175; stroke-linecap: round; stroke-linejoin: round;
   stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw var(--t) var(--d) cubic-bezier(.4, 0, .6, 1) forwards;
 }
-.swash { display: block; width: min(64%, 440px); height: auto; margin: .2rem auto 0; overflow: visible; }
-.swash path { fill: none; stroke: var(--a); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1.3s 3.1s cubic-bezier(.4, 0, .3, 1) forwards; }
+/* a tapered brush stroke the width of the wordmark, swept in by the same pen once the name is written */
+.swash { display: block; font-size: clamp(3.6rem, 17vw, 10.5rem); width: 3.2em; height: .352em; margin: .02em auto 0; overflow: visible; fill: url(#swash-ink); }
+.swash stop:first-child { stop-color: var(--a); }
+.swash stop:last-child { stop-color: var(--b); }
+.swash mask path { fill: none; stroke: #fff; stroke-width: 16; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw .9s 3.15s cubic-bezier(.5, 0, .2, 1) forwards; }
 .lede { margin: 1.6rem auto 0; max-width: 32ch; font-size: clamp(1.05rem, 2.6vw, 1.35rem); color: var(--muted); animation: rise 1s .5s both; }
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } }
 @keyframes draw { to { stroke-dashoffset: 0; } }
