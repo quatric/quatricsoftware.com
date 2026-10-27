@@ -108,7 +108,6 @@ h1 {
   padding-bottom: .25em; margin-bottom: -.25em;
   animation: ink-in .35s 3.05s both, sheen 9s 3.4s linear infinite;
 }
-.period { display: inline-block; color: var(--b); -webkit-text-fill-color: var(--b); animation: pop .5s 3.1s cubic-bezier(.3, 1.8, .5, 1) both, bounce 2.6s 3.8s ease-in-out infinite; }
 /* the wordmark is written out with a pen: strokes along each letter unmask the font's own outlines */
 .sketch {
   position: absolute; left: 0; top: 0; width: 3.387em; height: 1em; overflow: visible; pointer-events: none;
@@ -121,16 +120,14 @@ h1 {
   fill: none; stroke: #fff; stroke-width: 175; stroke-linecap: round; stroke-linejoin: round;
   stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw var(--t) var(--d) cubic-bezier(.4, 0, .6, 1) forwards;
 }
-.swash { display: block; width: min(60%, 420px); height: 22px; margin: .4rem auto 0; overflow: visible; }
-.swash path { fill: none; stroke: var(--a); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 420; stroke-dashoffset: 420; animation: draw 1.4s .8s ease-out forwards; }
+.swash { display: block; width: min(64%, 440px); height: auto; margin: .2rem auto 0; overflow: visible; }
+.swash path { fill: none; stroke: var(--a); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1.3s 3.1s cubic-bezier(.4, 0, .3, 1) forwards; }
 .lede { margin: 1.6rem auto 0; max-width: 32ch; font-size: clamp(1.05rem, 2.6vw, 1.35rem); color: var(--muted); animation: rise 1s .5s both; }
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } }
 @keyframes draw { to { stroke-dashoffset: 0; } }
 @keyframes sheen { to { background-position: -200% 0; } }
 @keyframes ink-in { from { opacity: 0; } }
 @keyframes ink-out { to { opacity: 0; } }
-@keyframes pop { from { opacity: 0; transform: scale(0); } }
-@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-.12em); } }
 
 /* sections */
 .block { padding: clamp(2.5rem, 7vw, 4.5rem) 0; }

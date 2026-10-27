@@ -19,7 +19,7 @@
     }
   }
 
-  /* hero: click the period or the wordmark */
+  /* hero: click the wordmark */
   $('.word').addEventListener('click', e => confetti(e.clientX, e.clientY, 36));
 
   /* rotating taglines */
