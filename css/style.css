@@ -104,18 +104,23 @@ h1 {
   background: linear-gradient(100deg, var(--a), var(--b) 55%, var(--a));
   background-size: 200% 100%;
   -webkit-background-clip: text; background-clip: text; color: transparent;
-  animation: ink-in .8s 1.75s both, sheen 9s 2.55s linear infinite;
+  /* room for the q's descender, or the clipped gradient cuts its tail off */
+  padding-bottom: .25em; margin-bottom: -.25em;
+  animation: ink-in .35s 3.05s both, sheen 9s 3.4s linear infinite;
 }
-.period { display: inline-block; color: var(--b); -webkit-text-fill-color: var(--b); animation: pop .5s 2.1s cubic-bezier(.3, 1.8, .5, 1) both, bounce 2.6s 2.8s ease-in-out infinite; }
-/* the wordmark is traced from the font's own outlines, then filled in */
+.period { display: inline-block; color: var(--b); -webkit-text-fill-color: var(--b); animation: pop .5s 3.1s cubic-bezier(.3, 1.8, .5, 1) both, bounce 2.6s 3.8s ease-in-out infinite; }
+/* the wordmark is written out with a pen: strokes along each letter unmask the font's own outlines */
 .sketch {
   position: absolute; left: 0; top: 0; width: 3.387em; height: 1em; overflow: visible; pointer-events: none;
-  fill: none; stroke: url(#ink); stroke-width: 16; stroke-linecap: round; stroke-linejoin: round;
-  animation: ink-out .7s 2.4s forwards;
+  fill: url(#ink);
+  animation: ink-out .3s 3.4s forwards;
 }
 .sketch stop:first-child { stop-color: var(--a); }
 .sketch stop:last-child { stop-color: var(--b); }
-.sketch path { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1.15s calc(.3s + var(--i) * .15s) cubic-bezier(.55, 0, .35, 1) forwards; }
+.sketch mask path {
+  fill: none; stroke: #fff; stroke-width: 175; stroke-linecap: round; stroke-linejoin: round;
+  stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw var(--t) var(--d) cubic-bezier(.4, 0, .6, 1) forwards;
+}
 .swash { display: block; width: min(60%, 420px); height: 22px; margin: .4rem auto 0; overflow: visible; }
 .swash path { fill: none; stroke: var(--a); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 420; stroke-dashoffset: 420; animation: draw 1.4s .8s ease-out forwards; }
 .lede { margin: 1.6rem auto 0; max-width: 32ch; font-size: clamp(1.05rem, 2.6vw, 1.35rem); color: var(--muted); animation: rise 1s .5s both; }
