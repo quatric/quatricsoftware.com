@@ -261,3 +261,7 @@ footer p { margin: 0; letter-spacing: normal; }
 .subhead2 { margin: 3rem 0 .8rem; font-size: clamp(1.15rem, 3vw, 1.45rem); letter-spacing: -.01em; line-height: 1.15; }
 .subhead2 + .section-note { margin-top: 0; }
 .more-work { margin-top: 2.5rem; }
+
+.card.mac { padding-bottom: 1.2rem; }
+.card.mac .card-head { margin-bottom: 0; }
+.card.mac::after { content: none; }
