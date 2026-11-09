@@ -162,7 +162,6 @@ h2::after { content: ""; display: block; width: 2.4rem; height: 4px; margin-top:
 .card h3 a::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: 16px; }
 .card-head { display: flex; align-items: center; gap: .9rem; margin-bottom: .7rem; }
 h3 { margin: 0; font-size: 1.1rem; line-height: 1.25; overflow-wrap: anywhere; }
-.repo { font-size: .8rem; color: var(--muted); overflow-wrap: anywhere; }
 .card p { margin: 0 0 .6rem; color: var(--muted); font-size: .96rem; }
 
 .icon {
