@@ -258,4 +258,6 @@ footer p { margin: 0; letter-spacing: normal; }
 
 .subhead { margin: 4rem 0 1.4rem; font-size: clamp(1.4rem, 3.5vw, 1.9rem); letter-spacing: -.01em; line-height: 1.15; }
 .more-work + .subhead { margin-top: 3rem; }
+.subhead2 { margin: 3rem 0 .8rem; font-size: clamp(1.15rem, 3vw, 1.45rem); letter-spacing: -.01em; line-height: 1.15; }
+.subhead2 + .section-note { margin-top: 0; }
 .more-work { margin-top: 2.5rem; }
