@@ -1,0 +1,13 @@
+.card.hbc { }
+.icon.hb { width: 128px; height: 48px; padding: 0; border-radius: 10px; background: #000; object-fit: cover; image-rendering: auto; }
+.icon.hb.ph { display: grid; place-items: center; background: var(--tile); color: var(--muted); font-weight: 700; font-size: 1.4rem; }
+.card-head > div { min-width: 0; }
+.ver { display: block; font-size: .8rem; color: var(--muted); margin-top: .15rem; }
+.card { padding-bottom: 3rem; }
+.links { position: absolute; left: 1.2rem; right: 1.2rem; bottom: 1rem; z-index: 2; display: flex; gap: 1rem; font-size: .85rem; }
+.links a { color: var(--a); font-weight: 700; text-decoration: none; }
+.links a:hover { text-decoration: underline; }
+.links a:nth-child(n+2) { color: var(--muted); font-weight: 400; }
+.card::after { content: none; }
+.card:hover .icon.hb, .card:focus-within .icon.hb { transform: scale(1.06); }
+code { font-size: .92em; }

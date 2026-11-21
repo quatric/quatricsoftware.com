@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="2.289.0">
+	<name>MAME4Wii (VTech V.Smile)</name>
+	<coder>MAMEdev Team, MAME4Wii contributors</coder>
+	<version>2.289.0 (MAME 0.289)</version>
+	<release_date>20261119160437</release_date>
+	<short_description>Arcade emulation (VTech V.Smile)</short_description>
+	<long_description>MAME 0.289 for the Nintendo Wii.
+
+Put ROM sets (zip/7z) in sd:/mame4wii/roms or usb:/mame4wii/roms.
+Controls: Wii Remote (sideways), Wii Remote + Nunchuk, Classic Controller, Wii U Pro Controller, GameCube controllers (including the Wii U adapter), USB keyboard and mouse.
+HOME opens the MAME menu; Minus+Plus opens the on-screen keyboard.</long_description>
+	<no_ios_reload/>
+	<ahb_access/>
+</app>

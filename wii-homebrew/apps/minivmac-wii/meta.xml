@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+	<name>Mini vMac Wii</name>
+	<version>1.1.0</version>
+	<release_date>20261120171901</release_date>
+	<short_description>Classic Macintosh emulator</short_description>
+	<long_description>Mini vMac emulating a Macintosh 128K, 512Ke, Plus, SE, Classic, II or IIx, filling the whole TV screen. Pick the Mac when the app starts; HOME > Switch Mac model changes it later.
+
+Put the ROMs in sd:/apps/MinivMacWii/ (Mac128K.ROM, vMac.ROM, MacSE.ROM, Classic.ROM, MacII.ROM, MacIIx.ROM) along with your disk images (disk1.dsk, disk2.dsk, ... are inserted at start; a model's own folder, such as II/, is looked in first; HOME opens a menu to insert others).
+
+Wii Remote: point and press A or B to use the mouse, D-Pad for arrow keys, 1 = command, 2 = option, + = on-screen keyboard, - = display mode, HOME = menu. Nunchuk, Classic Controller, GameCube pads and USB keyboards and mice work too.</long_description>
+	<ahb_access/>
+</app>

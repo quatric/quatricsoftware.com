@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+  <name>FNFWii</name>
+  <coder>quatric</coder>
+  <version>0.1.5</version>
+  <short_description>Friday Night Funkin' for the Wii</short_description>
+  <long_description>A Wii port of Friday Night Funkin'. Story mode, freeplay and options, with Wii Remote, Classic Controller, GameCube controller and USB keyboard support.</long_description>
+  <ahb_access/>
+</app>
