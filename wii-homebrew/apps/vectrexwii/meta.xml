@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<app version="1">
-	<name>VectrexWii</name>
-	<coder>Aruskano, cmyksoda</coder>
-	<version>0.8</version>
-	<release_date>20260806</release_date>
-	<short_description>Vectrex Emulator</short_description>
-	<long_description>Wii port of Vecx - a vectrex emulator written by Valavan Manohararajah.</long_description>
-</app>
